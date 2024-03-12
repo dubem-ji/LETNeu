@@ -10,8 +10,8 @@ body{
 }
 #header{
     width: 100%;
-    height: 50vh;
-    background-image: url(/images/elegans.png);
+    height: 80vh;
+    background-image: url(/images/adult\ elegans.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -23,5 +23,19 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+}
+nav .logo{
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+nav .logo p{
+    font-size: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
