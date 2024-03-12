@@ -5,37 +5,255 @@
     box-sizing: border-box;
 }
 body{
-    background: #ffffff;
+    background: #d4d2d5;
     color: #080808;
 }
 #header{
     width: 100%;
-    height: 80vh;
-    background-image: url(/images/adult\ elegans.jpg);
+    height: 100vh;
+    background-image: url(/images/elegans.png);
     background-size: cover;
     background-position: center;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 8%;
 }
 nav{
+    overflow: hidden;
+    background: #080808;
+    padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav +.content {
+    padding-top: 60px;
 }
 nav .logo{
-    width: 9rem;
+    width: 7rem;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
+    color: #d4d2d5;
+
 }
 nav .logo p{
-    font-size: 10px;
+    font-size: 8px;
+    color: #d4d2d5;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 12px;
+}
+nav ul li a{
+    color: #d4d2d5;;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #333E61;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 250px;
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #d4d2d5;
+}
+.header-text h1 span{
+    color: #333E61;
+}
+
+
+/* RESEARCH */
+#research{
+    margin-top: 40px;
+    
+}
+#research .research-text{
+    color: #333E61;
+}
+#research .row{
+    margin-top: 30px;
+}
+#research .row h2{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+#research .row a{
+    color: #333E61;
+    font-weight: 700;
+}
+#research .more-research{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#research .more-research a{
+    color: #333E61;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ISH CALL */
+#news{
+    margin-top: 80px;
+}
+#news .ISN h1{
+    color: #333E61;
+    margin-bottom: 10px;
+}
+#news .ISN img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+#news .ISN .desc{
+    font-size: 15px;
+    font-weight: 500;
+}
+#news .ISN .desc b{
+    color: #333E61;
+}
+#news .ISN p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.speaker{
+    margin-top: 10px;
+    color: #333E61;
+    font-size: 15px;
+}
+.speakers li{
+    list-style: none;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.instructor {
+    margin-top: 10px;
+    color: #333E61;
+    font-size: 15px;
+}
+.instructors li {
+    list-style: none;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.organizer {
+    margin-top: 10px;
+    color: #333E61;
+    font-size: 15px;
+}
+.organizer-name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.organizer-tilte{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.eligibility{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333E61;
+}
+.eligibility i{
+    color: #080808;
+    font-weight: 400;
+}
+
+.link{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.link a{
+    color: #333E61;
+    font-weight: 600;
+}
+
+.deadline{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#contact {
+    margin-top: 40px;
+}
+#contact .row{
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .row .c-col-1
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#contact .row .c-col-2 h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav{
+        padding: 5px 5%
+    }
+    nav ul li{
+            margin: 12px 6px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    nav .logo h1{
+        font-size: 15px;
+    }
+    nav .logo p {
+        font-size: 7px;
+    }
+    .header-text{
+        font-size: 15px;
+        
+    }
+    .ISN-text{
+        font-size: 22px;
+    }
+    .research-text h1{
+        font-size: 22px;
+    }
+    .research .row h2{
+        font-size: 15px;
+    }
 }
