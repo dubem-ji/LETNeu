@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/images/elegans.png);
+    background-image: url(/images/elegans.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -39,12 +39,19 @@ nav .logo{
     align-items: left;
     justify-content: space-between;
     color: #d4d2d5;
+    transition: 0.5s;
 
 }
+
 nav .logo p{
     font-size: 8px;
     color: #d4d2d5;
 }
+nav .logo:hover {
+    cursor: pointer;
+    color: #333E61;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -99,7 +106,7 @@ nav ul li a:hover::after{
 }
 #research .row h2{
     text-align: justify;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
 }
 #research .row a{
@@ -116,16 +123,17 @@ nav ul li a:hover::after{
     color: #333E61;
     text-decoration: underline;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
-/* ISH CALL */
+/* ISN CALL */
 #news{
-    margin-top: 90px;
+    padding-top: 90px;
 }
 #news .ISN h1{
     color: #333E61;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 #news .ISN img{
@@ -174,11 +182,11 @@ nav ul li a:hover::after{
 }
 .organizer-name{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .organizer-tilte{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .eligibility{
@@ -207,7 +215,7 @@ nav ul li a:hover::after{
     margin-bottom: 40px;
 }
 #contact {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 #contact .row{
     padding: 15px 8%;
@@ -222,8 +230,9 @@ nav ul li a:hover::after{
     gap: 15px;
 }
 #contact .row .c-col-2 h3{
-    font-size: 15px;
+    font-size: 11.5px;
     font-weight: 400;
+    color: #333E61;
 }
 
 
@@ -243,6 +252,9 @@ nav ul li a:hover::after{
     nav .logo p {
         font-size: 7px;
     }
+    #news .ISN h1 {
+        margin-top: 0px;
+    }
     .header-text{
         font-size: 15px;
         
@@ -251,7 +263,7 @@ nav ul li a:hover::after{
         font-size: 22px;
     }
     .research-text h1{
-        font-size: 22px;
+        font-size: 18px;
     }
     .research .row h2{
         font-size: 15px;
